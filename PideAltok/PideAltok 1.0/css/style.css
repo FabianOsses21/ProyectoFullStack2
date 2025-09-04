@@ -56,7 +56,7 @@ h2 {
 }
 
 .heading_container h2 span {
-  color: #ffbe33;
+  color: #ff0000;
 }
 
 .heading_container p {
@@ -349,6 +349,9 @@ a:focus {
 
 .slider_section .detail-box p {
   font-size: 14px;
+}
+.h2adm {
+  color: #ff0000;
 }
 
 .slider_section .detail-box a {
