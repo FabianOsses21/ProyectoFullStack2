@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Basic -->
+  <head>
+      <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
@@ -28,10 +28,11 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-</head>
-<body>
+  <link href="css/login-register.css" rel="stylesheet" />
+  </head>
+  <body>
 
-  <div class="hero_area">
+<div class="hero_area">
     <div class="bg-box">
       <img src="images/hero-bg.jpg" alt="">
     </div>
@@ -61,13 +62,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="pedir.html">Pide sin registrarte</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="administrador.html">Panel de administrador <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" href="administrador.html">Panel de administrador</a>
               </li>
             </ul>
             <div class="user_option">
-              <a href="iniciarSesion-Registro.html" class="user_link">
+              <a href="iniciarSesion-Registro.html" class="user_link current">
                 <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="sr-only">(current)</span>
               </a>
               <a class="cart_link" href="#">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -90,61 +92,62 @@
       </div>
     </header>
     <!-- end header section -->
-    <!-- Panel de Ventas -->
-    <section class="food_section layout_padding-bottom">
+
+
+    <!-- iniciar sesión sección -->
+    <section class="login_section layout_padding">
       <div class="container">
-        <div class="heading_container heading_center">
-          <h2 class="h2adm">Panel de Ventas</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Resumen de Ventas</h5>
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Producto</th>
-                      <th>Cantidad</th>
-                      <th>Total</th>
-                      <th>Fecha</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Pizza</td>
-                      <td>3</td>
-                      <td>$60.000</td>
-                      <td>2025-09-03</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Hamburguesa</td>
-                      <td>2</td>
-                      <td>$30.000</td>
-                      <td>2025-09-03</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Papas Fritas</td>
-                      <td>5</td>
-                      <td>$25.000</td>
-                      <td>2025-09-02</td>
-                    </tr>
-                  </tbody>
-                </table>
+        <div class="row">
+            <div class="col-md-6 col-lg-5">
+              <!-- Login Card -->
+              <div id="login-card" class="login-card">
+                <form action="iniciarSesion-Registro.html" method="post" autocomplete="on">
+                  <div class="form-group mb-3">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.com" required />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required />
+                  </div>
+                  <button type="submit" class="btn login-btn-warning btn-block w-100 mb-2" style="font-weight:bold;">Iniciar Sesión</button>
+                  <button type="button" onclick="" class="btn btn-outline-danger w-100 mb-2 iniGoogle"><i class="fa fa-google"></i> Iniciar Sesión con Google</button>
+                  <button type="button" onclick="mostrarRegistro()" class="btn btn-outline-primary w-100 mb-2 enviar2">Registrarse</button>
+                  <div class="text-center mt-2">
+                    <a href="#" class="olvidaste text-secondary" onclick="verificar()">¿Olvidaste tu contraseña?</a>
+                  </div>
+                </form>
+              </div>
+              
+              <div id="registro-card" class="registro-card mt-3" style="display:none;">
+                <form action="iniciarSesion-Registro.html" method="post" autocomplete="on">
+                  <h3 class="mb-3 text-center">Registro</h3>
+                  <div class="form-group mb-2">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Tu nombre de usuario" required />
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="correo-reg">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo-reg" name="correo" placeholder="ejemplo@correo.com" required />
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="contraseña-reg">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña-reg" name="contraseña" placeholder="Crea una contraseña" required />
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="contraseña-repetir">Repetir Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña-repetir" name="contraseña-repetir" placeholder="Repite la contraseña" required />
+                  </div>
+                  <button type="submit" class="btn btn-success w-100 mb-2">Registrarse</button>
+                  <button type="button" onclick="mostrarLogin()" class="btn btn-outline-secondary w-100 mb-2">Volver a Iniciar Sesión</button>
+                </form>
               </div>
             </div>
-          </div>
         </div>
       </div>
-    </section>
-    <!-- Fin Panel de Ventas -->
-  </div>
+      <!--fIN Inicio de sesión-->
 
- <!-- footer sección -->
+    <!-- footer sección -->
   <footer class="footer_section">
     <div class="container">
       <div class="row">
@@ -224,7 +227,7 @@
       </div>
     </div>
   </footer>
-  <!-- footer sección -->
+  <!-- FIN footer sección -->
      <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
@@ -245,6 +248,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+  </body>
 </body>
-
+<script src="js/login-register.js"></script>
 </html>

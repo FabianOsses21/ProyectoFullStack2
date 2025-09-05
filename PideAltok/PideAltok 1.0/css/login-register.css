@@ -1,0 +1,54 @@
+/* Estilos personalizados para login y registro */
+
+.login-card, .registro-card {
+  background: rgba(255,255,255,0.97);
+  border: 2px solid #ff0000;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.login-section-center {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-btn-google {
+  border-color: #ff0000;
+  color: #ea4335;
+}
+.login-btn-google:hover {
+  background: #ea4335;
+  color: #fff;
+}
+
+.login-btn-register {
+  border-color: #ff0000;
+  color: #007bff;
+}
+.login-btn-register:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.login-btn-warning {
+  background: #ff0000; /* Changed to red */
+  color: #000000;  
+  font-weight: bold;
+  border: none;
+}
+ .login-btn-warning:hover {
+  background: #c20000; /* Changed to a darker red on hover */
+}
+
+.login-link {
+  color: #888;
+  text-decoration: underline;
+  font-size: 0.95em;
+}
+.login-link:hover {
+  color: #ff0000;
+}

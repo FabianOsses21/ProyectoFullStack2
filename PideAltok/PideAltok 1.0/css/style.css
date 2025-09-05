@@ -17,6 +17,9 @@ body {
 .layout_padding2-top {
   padding-top: 75px;
 }
+.user_option .user_link.current i {
+  color: #ff0000 ;
+}
 
 .layout_padding2-bottom {
   padding-bottom: 75px;
