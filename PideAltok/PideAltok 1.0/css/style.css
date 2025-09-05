@@ -6,27 +6,27 @@ body {
   overflow-x: hidden;
 }
 
-.layout_padding {
+.relleno_diseño {
   padding: 90px 0;
 }
 
-.layout_padding2 {
+.relleno_diseño2 {
   padding: 75px 0;
 }
 
-.layout_padding2-top {
+.relleno_diseño2-top {
   padding-top: 75px;
 }
 
-.layout_padding2-bottom {
+.relleno_diseño2-bajo{
   padding-bottom: 75px;
 }
 
-.layout_padding-top {
+.relleno_diseño-top {
   padding-top: 90px;
 }
 
-.layout_padding-bottom {
+.relleno_diseño-bajo {
   padding-bottom: 90px;
 }
 
@@ -913,7 +913,7 @@ a:focus {
   margin-bottom: 30px;
 }
 
-.seccion_pie .contacto_pie .contact_link_box {
+.seccion_pie .contacto_pie .caja_link_contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,16 +923,16 @@ a:focus {
           flex-direction: column;
 }
 
-.seccion_pie .contacto_pie .contact_link_box a {
+.seccion_pie .contacto_pie .caja_link_contacto a {
   margin: 5px 0;
   color: #ffffff;
 }
 
-.seccion_pie .contacto_pie .contact_link_box a i {
+.seccion_pie .contacto_pie .caja_link_contacto a i {
   margin-right: 5px;
 }
 
-.seccion_pie .contacto_pie .contact_link_box a:hover {
+.seccion_pie .contacto_pie .caja_link_contacto a:hover {
   color: #ff0000;
 }
 
