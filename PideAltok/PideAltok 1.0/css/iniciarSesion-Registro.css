@@ -48,15 +48,26 @@ input[type="contraseña"]{
 
 button{
     display: flex;
- 
-    font-size: 23px;
+    font-size: 50px;
     background-color: #f88b6f;
-    border-radius: 5px;
-    width: 190px;     
+    border-radius: 10px;
+    width: 200px;     
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
+    
      
+}
+
+.enviar{
+    background-color: #f88b6f;
+    margin: 10px;
+}
+
+.enviar2{
+    background-color: #f88b6f;
+    margin: 10px;
 }
 
 button:hover,.olvidaste:hover{
