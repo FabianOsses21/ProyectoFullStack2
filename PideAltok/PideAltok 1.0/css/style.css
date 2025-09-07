@@ -28,7 +28,7 @@ body {
 .layout_padding2-top {
   padding-top: 75px;
 }
-.user_option .user_link.current i {
+.usuario_opcion .usuario_link.current i {
   color: #f53d3d ;
 }
 
@@ -40,7 +40,7 @@ body {
   padding-top: 90px;
 }
 
-.layout_padding-bottom {
+.relleno_diseño_inferior {
   padding-bottom: 90px;
 }
 
@@ -78,7 +78,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.contenido_titulo.heading_center {
+.contenido_titulo.encabezado_centro {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -132,11 +132,11 @@ a:focus {
      object-fit: cover;
 }
 
-.sub_page .area_principal {
+.area_principal {
   min-height: auto;
 }
 
-.sub_page .area_principal .caja-fondo {
+.area_principal .caja-fondo {
   position: absolute;
   top: 0;
   left: 0;
@@ -144,7 +144,7 @@ a:focus {
   height: 100%;
 }
 
-.sub_page .area_principal .caja-fondo img {
+.area_principal .caja-fondo img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -212,7 +212,7 @@ a:focus {
   color: #f53d3d;
 }
 
-.user_option {
+.usuario_opcion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,19 +221,19 @@ a:focus {
           align-items: center;
 }
 
-.user_option a {
+.usuario_opcion a {
   margin: 0 10px;
 }
 
-.user_option .user_link {
+.usuario_opcion .usuario_link {
   color: #ffffff;
 }
 
-.user_option .user_link:hover {
+.usuario_opcion .usuario_link:hover {
   color: #f53d3d;
 }
 
-.user_option .cart_link {
+.usuario_opcion .cart_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,18 +246,18 @@ a:focus {
 }
 
 
-.user_option .cart_link svg {
+.usuario_opcion .cart_link svg {
   width: 17px;
   height: auto;
   fill: #ffffff;
   margin-bottom: 2px;
 }
 
-.user_option .cart_link:hover svg {
+.usuario_opcion .cart_link:hover svg {
   fill: #f53d3d;
 }
 
-.user_option .order_online {
+.usuario_opcion .order_online {
   display: inline-block;
   padding: 8px 30px;
   background-color: #f84b4b;
@@ -268,7 +268,7 @@ a:focus {
   border: none;
 }
 
-.user_option .order_online:hover {
+.usuario_opcion .order_online:hover {
   background-color: #f53d3d;
 }
 
@@ -878,16 +878,16 @@ ul{
   border-radius: 100%;
 }
 
-/* client section end */
-.contact_section .contenido_titulo {
+ 
+.contact_seccion .contenido_titulo {
   margin-bottom: 45px;
 }
 
-.contact_section .formulario_contenedor .form-group {
+.contact_seccion .formulario_contenedor .form-group {
   margin-bottom: 25px;
 }
 
-.contact_section .formulario_contenedor input {
+.contact_seccion .formulario_contenedor input {
   width: 100%;
   border: none;
   height: 50px;
@@ -899,28 +899,28 @@ ul{
   border-radius: 5px;
 }
 
-.contact_section .formulario_contenedor input::-webkit-input-placeholder {
+.contact_seccion .formulario_contenedor input::-webkit-input-placeholder {
   color: #222222;
 }
 
-.contact_section .formulario_contenedor input:-ms-input-placeholder {
+.contact_seccion .formulario_contenedor input:-ms-input-placeholder {
   color: #222222;
 }
 
-.contact_section .formulario_contenedor input::-ms-input-placeholder {
+.contact_seccion .formulario_contenedor input::-ms-input-placeholder {
   color: #222222;
 }
 
-.contact_section .formulario_contenedor input::placeholder {
+.contact_seccion .formulario_contenedor input::placeholder {
   color: #222222;
 }
 
-.contact_section .formulario_contenedor input.message-box {
+.contact_seccion .formulario_contenedor input.message-box {
   height: 120px;
   border-radius: 5px;
 }
 
-.contact_section .formulario_contenedor .boton-caja {
+.contact_seccion .formulario_contenedor .boton-caja {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -929,7 +929,7 @@ ul{
           justify-content: center;
 }
 
-.contact_section .formulario_contenedor button {
+.contact_seccion .formulario_contenedor button {
   margin-top: 10px;
   border: none;
   text-transform: uppercase;
@@ -943,7 +943,7 @@ ul{
   border: none;
 }
 
-.contact_section .formulario_contenedor button:hover {
+.contact_seccion .formulario_contenedor button:hover {
   background-color: #f53d3d;
 }
 
@@ -970,7 +970,7 @@ ul{
   color: #dbdbdb;
 }
 
-.seccion_pie .footer-col {
+.seccion_pie .pie_colum {
   margin-bottom: 30px;
 }
 
@@ -1053,4 +1053,4 @@ ul{
 .seccion_pie .informacion_pie p a {
   color: inherit;
 }
-/*# sourceMappingURL=style.css.map */
+ 
