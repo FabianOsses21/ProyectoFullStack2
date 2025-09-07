@@ -29,7 +29,7 @@ body {
   padding-top: 75px;
 }
 .user_option .user_link.current i {
-  color: #ff0000 ;
+  color: #f53d3d ;
 }
 
 .layout_padding2-bottom {
@@ -70,7 +70,7 @@ h2 {
 }
 
 .contenido_titulo h2 span {
-  color: #ff0000;
+  color: #f53d3d;
 }
 
 .contenido_titulo p {
@@ -169,8 +169,10 @@ a:focus {
 .navbar-brand span {
   font-weight: bold;
   font-size: 32px;
-  color: #f60808;
+  color: #f53d3d;
 }
+
+
 
 .contenedor_navegacion-persolizado {
   padding: 0;
@@ -182,7 +184,7 @@ a:focus {
 
 .contenedor_navegacion-persolizado .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #ff0000;
+  color: #f53d3d;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -190,8 +192,10 @@ a:focus {
   transition: all 0.3s;
 }
 
-.contenedor_navegacion-persolizado .navbar-nav .nav-item:hover .nav-link, .contenedor_navegacion-persolizado .navbar-nav .nav-item.active .nav-link {
-  color: #ff0000;
+ 
+
+.contenedor_navegacion-persolizado, .navbar-nav .nav-item:hover .nav-link, .contenedor_navegacion-persolizado .navbar-nav .nav-item.active .nav-link {
+  color: #ffffff;
 }
 
 .contenedor_navegacion-persolizado .nav_search-btn {
@@ -204,7 +208,7 @@ a:focus {
 }
 
 .contenedor_navegacion-persolizado .nav_search-btn:hover {
-  color: #ff0000;
+  color: #f53d3d;
 }
 
 .user_option {
@@ -225,7 +229,7 @@ a:focus {
 }
 
 .user_option .user_link:hover {
-  color: #ff0000;
+  color: #f53d3d;
 }
 
 .user_option .cart_link {
@@ -249,13 +253,13 @@ a:focus {
 }
 
 .user_option .cart_link:hover svg {
-  fill: #ff0000;
+  fill: #f53d3d;
 }
 
 .user_option .order_online {
   display: inline-block;
   padding: 8px 30px;
-  background-color: #ff0000;
+  background-color: #f84b4b;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -264,7 +268,7 @@ a:focus {
 }
 
 .user_option .order_online:hover {
-  background-color: #ff0000;
+  background-color: #f53d3d;
 }
 
 .contenedor_navegacion-persolizado .navbar-toggler {
@@ -367,13 +371,13 @@ a:focus {
   font-size: 14px;
 }
 .h2adm {
-  color: #ff0000;
+  color: #f53d3d;
 }
 
 .seccion_deslizante .detalle-caja a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -383,7 +387,7 @@ a:focus {
 }
 
 .seccion_deslizante .detalle-caja a:hover {
-  background-color: #ff0000;
+  background-color: #f53d3d;
 }
 
 .seccion_deslizante .caja-img img {
@@ -409,10 +413,15 @@ a:focus {
   opacity: 1;
 }
 
+.filtro_menu li:hover{
+ 
+  color: #f84b4b;
+}
+
 .seccion_deslizante .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
 }
 
 .seccion_oferta {
@@ -443,7 +452,7 @@ a:focus {
   -webkit-transition: all 0.1 0.5s;
   transition: all 0.1 0.5s;
   border-radius: 100%;
-  border: 5px solid #ff0000;
+  border: 5px solid #f53d3d;
   overflow: hidden;
 }
 
@@ -472,7 +481,7 @@ a:focus {
 .seccion_oferta .box .detalle-caja a {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -481,7 +490,7 @@ a:focus {
 }
 
 .seccion_oferta .box .detalle-caja a:hover {
-  background-color: #ff0000;
+  background-color: #f53d3d;
 }
 
 .seccion_oferta .box .detalle-caja a svg {
@@ -538,7 +547,7 @@ a:focus {
 }
 
 .seccion_comida .filtro_menu li.active {
-  background-color: #ff0000;
+  background-color: #f53d3d;
   color: #ffffff;
 }
 
@@ -610,7 +619,7 @@ ul{
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background: #ff0000;
+  background: #f53d3d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,7 +655,7 @@ ul{
 .seccion_comida .boton-caja a {
   display: inline-block;
   padding: 10px 55px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -655,7 +664,7 @@ ul{
 }
 
 .seccion_comida .boton-caja a:hover {
-  background-color: #ff0000;
+  background-color: #f53d3d;
 }
 
 .seccion_sobre {
@@ -693,7 +702,7 @@ ul{
 .seccion_sobre .detalle-caja a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -703,7 +712,7 @@ ul{
 }
 
 .seccion_sobre .detalle-caja a:hover {
-  background-color: #ff0000;
+  background-color: #f53d3d;
 }
 
 .reserva_seccion {
@@ -755,7 +764,7 @@ ul{
   text-transform: uppercase;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -764,7 +773,7 @@ ul{
 }
 
 .reserva_seccion .formulario_contenedor button:hover {
-  background-color: #ff0000;
+  background-color: #f53d3d;
 }
 
 
@@ -802,7 +811,7 @@ ul{
 
 .cliente_seccion .box .caja-img img {
   border-radius: 100%;
-  border: 5px solid #ff0000;
+  border: 5px solid #f53d3d;
   position: relative;
 }
 
@@ -813,7 +822,7 @@ ul{
   top: 0;
   width: 20px;
   height: 20px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
   -webkit-transform: rotate(45deg) translateX(-50%);
           transform: rotate(45deg) translateX(-50%);
 }
@@ -852,7 +861,7 @@ ul{
 .cliente_seccion .owl-carousel .owl-nav .owl-next {
   width: 45px;
   height: 45px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
   color: #ffffff;
   outline: none;
   bottom: 0px;
@@ -918,7 +927,7 @@ ul{
   text-transform: uppercase;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #ff0000;
+  background-color: #f53d3d;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
@@ -927,12 +936,12 @@ ul{
 }
 
 .contact_section .formulario_contenedor button:hover {
-  background-color: #ff0000;
+  background-color: #f53d3d;
 }
 
 /* footer section*/
 .seccion_pie {
-  background-color: #222831;
+  background-color: #212121;
   color: #ffffff;
   padding: 75px 0 40px 0;
   text-align: center;
@@ -977,7 +986,7 @@ ul{
 }
 
 .seccion_pie .contacto_pie .contact_link_box a:hover {
-  color: #ff0000;
+  color: #f53d3d;
 }
 
 .seccion_pie .footer-logo {
@@ -1020,7 +1029,7 @@ ul{
 }
 
 .seccion_pie .redes_pie a:hover {
-  color: #ff0000;
+  color: #f53d3d;
 }
 
 .seccion_pie .informacion_pie {
