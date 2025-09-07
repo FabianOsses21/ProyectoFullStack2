@@ -193,6 +193,7 @@ a:focus {
 }
 
  
+ 
 
 .contenedor_navegacion-persolizado, .navbar-nav .nav-item:hover .nav-link, .contenedor_navegacion-persolizado .navbar-nav .nav-item.active .nav-link {
   color: #ffffff;
@@ -505,6 +506,13 @@ a:focus {
           transform: scale(1.1);
 }
 
+.carrito_contenido{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
 
 .img_carta{
   width: 100%;
