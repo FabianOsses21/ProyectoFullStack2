@@ -1,0 +1,87 @@
+body{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+body img{
+    width: 600px;
+    height: auto;
+}
+.formulario{
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;   
+    margin-bottom:50px ;
+    background-position: center bottom; 
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment:fixed ;
+    color: white;
+    text-shadow: black;
+}
+
+.bg-box {
+    z-index: -1;
+}
+
+ 
+
+input[type="usuario"],
+input[type="correo"],
+input[type="contraseña"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom:20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button{
+    display: flex;
+    margin: 10px;
+    margin-left: 45px;
+    font-size: 23px;
+    background-color: #f88b6f;
+    border-radius: 5px;
+    width: 190px;     
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover,.olvidaste:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+.olvidaste{
+    display: block;
+    position: absolute;
+    bottom: 19px;
+    left: 45%;
+    color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover{
+    background-color: #a3a29f;
+}
+
+ 
+
+.titulo{
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+ 
+.iniGoogle{
+    background-color: #ffffff;
+}
