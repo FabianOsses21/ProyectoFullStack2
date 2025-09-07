@@ -134,18 +134,17 @@
           <input type="correo" id="correo" name="correo" required />
           <label for="contraseña">Contraseña</label>
           <input type="contraseña" id="contraseña" name="contraseña" required />
-          <button type="enviar" class="enviar" onclick="iniciarSesion()"> <a href="index.html" >Iniciar Sesion</a> </button>
+          <button type="enviar" class="enviar" onclick="iniciarSesion()"> <a href="index.html" class="iniciarSesiontxt" >Iniciar Sesion</a> </button>
         </form>
         <button onclick="" class="iniGoogle">Iniciar Sesion con Google</button>
         <button onclick="mostrarRegistro()" class="enviar2">Registrarse</button>
-        <a href="#" class="olvidaste" onclick="verificar()"
-          >¿Olvidaste tu contraseña?</a
-        >
+        <a href="#" class="olvidaste" onclick="verificar()">¿Olvidaste tu contraseña?</a>
       </div>
       </div>
  
 
       <!--registro-->
+ 
       <div class="formulario" id="registro" style="display: none">
         <h2 class="titulo">Registrarse</h2>
         <form action="iniciarSesion-Registro.html" method="post">
@@ -163,14 +162,17 @@
             required
           />
         </form>
-        <button onclick="aceptar() " >Registrarse</button>
+        <button onclick="aceptar()" class="enviar" >Registrarse</button>
         <button onclick="" class="iniGoogle">Iniciar Sesion con Google</button>
         <a href="#" class="olvidaste" onclick="verificar()"
           >¿Olvidaste tu contraseña?</a
         >
+      
       </div>
+ 
 
       <!--enviarCodigo -->
+ 
       <div class="formulario" id="enviarCodigo" style="display: none">
         <h2 class="titulo">Recuperar Contraseña</h2>
         <p>Introduce el codigo de recuperacion</p>
@@ -183,10 +185,12 @@
             required
           />
         </form>
-        <button onclick="continuar() " class="enviar">Enviar</button>
+        <button onclick="continuar()" class="enviar">Enviar</button>
       </div>
+      
 
       <!--verificacion -->
+       
       <div class="formulario" id="verificacion" style="display: none">
         <h2 class="titulo">Verificacion</h2>
         <p>Introduce el codigo</p>
@@ -199,10 +203,12 @@
             required
           />
         </form>
-        <button onclick="nuevaContraseña() " class="enviar">continuar</button>
+        <button onclick="nuevaContraseña()" class="enviar">continuar</button>
       </div>
+      
 
       <!--nuevaContraseña -->
+     
       <div class="formulario" id="nuevaContraseña" style="display: none">
         <h2 class="titulo">Nueva contraseña</h2>
 
@@ -221,10 +227,11 @@
             name="contraseña"
             required/>
         </form>
-        <button onclick="aceptar() " class="enviar">Aceptar</button>
+        <button onclick="aceptar()" class="enviar">Aceptar</button>
       </div>
-    </div>
-     </div>
+     
+ 
+ 
  <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->

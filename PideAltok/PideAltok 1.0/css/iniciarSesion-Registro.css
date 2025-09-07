@@ -6,6 +6,8 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    margin: 0;
 }
  
 body img{
@@ -13,21 +15,30 @@ body img{
     height: auto;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .contenedor{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 80%;
     width: 100%;
 }
 
 .formulario{
+    
     border-radius: 5px;
     width: 300px;   
     background-position: center bottom; 
     align-items: center;
     color: white;
     text-shadow: black;
+    align-items: center;
+    justify-content: center;
 }
 
 .bg-box {
@@ -56,18 +67,14 @@ button{
     align-items: center;
     flex-direction: column;
     margin: 20px;
+ 
     
      
 }
 
-.enviar{
-    background-color: #f88b6f;
-    margin: 10px;
-}
-
-.enviar2{
-    background-color: #f88b6f;
-    margin: 10px;
+.enviar , .enviar2,.iniGoogle{
+    margin: 4px 0px 0px 28px;
+ 
 }
 
 button:hover,.olvidaste:hover{
@@ -80,16 +87,11 @@ button:hover,.olvidaste:hover{
     display: block;
     position: absolute;
     bottom: 19px;
-    left: 45%;
+    left: 39%;
     color: white;
 }
 
-
-a{
-    text-decoration: none;
-    color: black;
  
-}
 
 .button:hover{
     background-color: #a3a29f;
@@ -103,7 +105,194 @@ a{
     font-size: 50px;
 }
 
+.iniciarSesiontxt{
+    color: black;
+ 
+}
  
 .iniGoogle{
     background-color: #ffffff;
+}
+
+
+
+@media (max-width:767) {
+    .contenedor{
+        padding: 7px;
+    }
+    .formulario{
+    max-width: 80%;
+    padding: 13px;
+    }
+    .titulo{
+    font-size: 44px;
+    }
+    input,button{
+    font-size: 15px;
+    }
+    .olvidaste{
+    font-size: 12px;}
+    
+    
+}
+
+@media(max-width: 364px){
+    .contenedor{
+        padding: 5px;
+    }
+    .formulario{
+    max-width: 90%;
+    padding: 6px;
+    }
+    .titulo{
+    font-size: 44px;
+    }
+    input,button{
+    font-size: 4px;
+    }
+    .olvidaste{
+    font-size: 10px;}
+     
+
+}
+
+@media(max-width: 280px){
+    .contenedor{
+        padding: 3px;
+    }
+    .formulario{
+    max-width: 95%;
+    padding: 7px;
+    }
+    .titulo{
+    font-size: 18px;
+    }
+    input,button{
+    font-size: 10px;
+    }
+    .olvidaste{
+    font-size: 8px;}
+ 
+
+}
+
+@media(max-width: 250px){
+    .contenedor{
+        padding: 3px;
+    }
+    .formulario{
+    max-width: 96%;
+ 
+    }
+    .titulo{
+    font-size: 10px;
+    }
+    input,button{
+    font-size: 1px;
+ 
+    }
+    .olvidaste{
+    font-size: 8px;}
+    .enviar , .enviar2,.iniGoogle{
+    margin: 1px 2px 0px 2px;
+ 
+}
+
+@media(max-width: 155px){
+    .contenedor{
+        padding: 3px;
+    }
+    .formulario{
+    max-width: 96%;
+ 
+    }
+    .titulo{
+    font-size: 44px;
+    }
+    input,button{
+    font-size: 1px;
+    width: 1px;
+    height: 1px;
+    }
+    .olvidaste{
+    font-size: 8px;}
+    .enviar , .enviar2,.iniGoogle{
+    margin: 1px 2px 0px 2px;
+ 
+}
+
+}
+
+@media(max-width:480px){
+    body{
+    font-size: 10px;
+    }
+    .contenedor{
+        padding: 5px;
+        gap: 15px;
+    }
+    .formulario{
+    max-width: 95%;
+    padding: 7px;
+    }
+    .titulo{
+    font-size: 44px;
+    }
+    input,button{
+    font-size: 10px;
+ 
+    }
+    .olvidaste{
+    font-size: 8px;}
+
+}
+ 
+ @media(max-width:420px){
+    body{
+    font-size: 10px;
+    }
+    .contenedor{
+        padding: 5px;
+        gap: 15px;
+    }
+    .formulario{
+    max-width: 95%;
+ 
+    }
+    .titulo{
+    font-size: 44px;
+    }
+    input,button{
+    font-size: 10px;
+ 
+    }
+    .olvidaste{
+    font-size: 8px;}
+
+}
+ 
+ @media(max-width:170px){
+     
+    .contenedor{
+        padding: 5px;
+  
+    }
+    .formulario{
+    max-width: 95%;
+    padding: 7px;
+    }
+    .titulo{
+    font-size: 44px;
+    }
+    input,button{
+        display: flex;
+    font-size: 1px;
+    width: 2px;
+    height: 2px;
+    
+    }
+    .olvidaste{
+    font-size: 8px;}
+
+    }
 }
