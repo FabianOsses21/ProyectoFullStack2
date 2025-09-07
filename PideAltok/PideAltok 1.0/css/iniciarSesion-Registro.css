@@ -2,7 +2,7 @@ body{
      
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+ 
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -25,12 +25,12 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80%;
+    height: 60%;
     width: 100%;
 }
 
 .formulario{
-    
+   
     border-radius: 5px;
     width: 300px;   
     background-position: center bottom; 
@@ -39,47 +39,44 @@ a{
     text-shadow: black;
     align-items: center;
     justify-content: center;
-}
+  
+    
 
-.bg-box {
-    z-index: -1;
+
 }
 
  
-
+  
 input[type="usuario"],
 input[type="correo"],
 input[type="contraseña"]{
     width: 100%;
-    padding: 10px;
-    margin-bottom:20px;
+    padding:4px;
+    margin-bottom:5px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
 button{
     display: flex;
-    font-size: 50px;
+    font-size: 30px;
     background-color: #f88b6f;
-    border-radius: 10px;
+ 
     width: 200px;     
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 20px;
- 
-    
-     
+    flex-direction: column;  
 }
 
 .enviar , .enviar2,.iniGoogle{
-    margin: 4px 0px 0px 28px;
+    margin: 3px 0px 0px 28px;
  
 }
 
-button:hover,.olvidaste:hover{
+button:hover{
     transform: scale(1.1);
     transition: 0.2s;
+    background-color: #a3a29f;
 }
 
 
@@ -87,22 +84,22 @@ button:hover,.olvidaste:hover{
     display: block;
     position: absolute;
     bottom: 19px;
-    left: 39%;
+    left: 41%;
     color: white;
 }
 
- 
-
-.button:hover{
-    background-color: #a3a29f;
+.olvidaste:hover{
+      transform: scale(1.1);
+    transition: 0.2s;
 }
 
+ 
  
 
 .titulo{
     align-items: center;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .iniciarSesiontxt{
