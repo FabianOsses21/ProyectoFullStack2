@@ -34,8 +34,8 @@
 
 <body>
 
-  <div class="hero_area">
-    <div class="bg-box">
+  <div class="area_principal">
+    <div class="caja-fondo">
 
       <div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
           <div class="carousel-inner">
@@ -55,9 +55,9 @@
 
 
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="seccion_encabezado">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg contenedor_navegacion-persolizado">
           <a class="navbar-brand" href="index.html">
             <span>
               PideAltok
@@ -144,11 +144,7 @@
                   </g>
                 </svg>
               </a>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
+              
               <a href="pedir.html" class="order_online">
                 Pedir Altok
               </a>
@@ -159,16 +155,16 @@
     </header>
     <!-- end header section -->
     <!-- Carrusel Sección -->
-    <section class="slider_section ">
-        <div class="detail-box">
+    <section class="seccion_deslizante ">
+        <div class="detalle-caja">
                     <h1>
                       Comida lista AltoK
                     </h1>
                     <p>
                       Somos Pide Altok un local de comida rápida, donde podrás encontrar hamburguesas, pizzas, pastas y papas fritas.
                     </p>
-                    <div class="btn-box">
-                      <a href="pedir.html" class="btn1">
+                    <div class="boton-caja">
+                      <a href="pedir.html" class="boton1">
                         Pedir Altok
                       </a>
                     </div>
@@ -179,16 +175,17 @@
 
   <!-- offer section -->
 
-  <section class="offer_section layout_padding-bottom">
-    <div class="offer_container">
+  <section class="seccion_oferta layout_padding-bottom">  
+    <div class="contenedor_oferta">
       <div class="container ">
+        
         <div class="row">
           <div class="col-md-6  ">
             <div class="box ">
-              <div class="img-box">
+              <div class="caja-img">
                 <img src="images/o1.jpg" alt="">
               </div>
-              <div class="detail-box">
+              <div class="detalle-caja">
                 <h5>
                   Día de la Hamburguesa
                 </h5>
@@ -208,10 +205,10 @@
 
           <div class="col-md-6  ">
             <div class="box ">
-              <div class="img-box">
+              <div class="caja-img">
                 <img src="images/o2.jpg" alt="">
               </div>
-              <div class="detail-box">
+              <div class="detalle-caja">
                 <h5>
                   Día de la Pizza
                 </h5>
@@ -238,271 +235,71 @@
 
   <!-- Sección de Comida -->
 
-  <section class="food_section layout_padding-bottom">
+  <section class="seccion_comida layout_padding-bottom">
     <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
+       
           Menú
         </h2>
-      </div>
+       
 
-      <ul class="filters_menu">
-        <li class="active" data-filter="*">Todo</li>
-        <li data-filter=".burger">Hamburguesas</li>
-        <li data-filter=".pizza">Pizzas</li>
-        <li data-filter=".pasta">Pastas</li>
-        <li data-filter=".fries">Papas fritas</li>
-      </ul>
+   
 
-      <div class="filters-content">
+      <div class="contenido_filtro">
         <div class="row grid">
-          <div class="col-sm-6 col-lg-4 all pizza">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f1.png" alt="">
+          <div class="col-sm-7 col-lg-4 all">
+            <div class="card" style="width: 18rem;margin-top: 8px;">
+                <img src="images/f6.png" class="img_carta" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Pedir</a>
                 </div>
-                <div class="detail-box">
-                  <h5>
-                    Pizza 4 quesos
-                  </h5>
-                  <p>
-                    Pizza con salsa de tomate, mozzarella, parmesano, gorgonzola y queso de cabra.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $20.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+              </div>
+          </div>
+          
+      
+          <div class="col-sm-6.5 col-lg-4 all ">
+             <div class="card" style="width: 18rem; margin-top: 8px;">
+              <img src="images/f4.png" class="img_carta" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-danger">Pedir</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-6.5 col-lg-4 all" >
+           <div class="card" style="width: 18rem; margin-top: 8px;">
+            <img src="images/f1.png" class="img_carta" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-danger">Pedir</a>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-sm-6.5 col-lg-4 all ">
+             <div class="card" style="width: 18rem; margin-top: 8px;">
+              <img src="images/f2.png" class="img_carta" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-danger">Pedir</a>
+              </div>
+            </div>
+
+          </div>
+
+
         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all burger">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f2.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Hamburguesa Clásica
-                  </h5>
-                  <p>
-                    Hamburguesa con carne de res, lechuga, tomate, cebolla, queso cheddar y salsa especial.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $7.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pizza">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f3.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Pizza Albahaca
-                  </h5>
-                  <p>
-                    Pizza con salsa de tomate, mozzarella, parmesano, albahaca fresca y aceite de oliva.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $17.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f4.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Pasta Aceituna
-                  </h5>
-                  <p>
-                    Pasta con salsa de tomate, aceitunas, alcaparras y queso parmesano.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $8.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all fries">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f5.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Papas Fritas
-                  </h5>
-                  <p>
-                    Papas fritas crujientes servidas con salsa de la casa.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $3.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pizza">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f6.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Pizza 4 Estaciones
-                  </h5>
-                  <p>
-                    Pizza con 4 tipos de ingredientes: jamón, champiñones, pimientos y alcachofas.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $15.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all burger">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f7.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Hamburguesa Tasty
-                  </h5>
-                  <p>
-                    Hamburguesa con pollo crujiente, lechuga, tomate, lechuga, queso suizo y mayonesa de ajo.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $6.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all burger">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f8.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Hamburguesa Pollo
-                  </h5>
-                  <p>
-                    Hamburguesa con pechuga de pollo a la parrilla, lechuga, tomate, cebolla y mayonesa.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $7.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f9.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Pasta Clasica 
-                  </h5>
-                  <p>
-                    Pasta clasica con salsa de tomate, albahaca y queso parmesano.
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $10.000
-                    </h6>
-                    <a href="pedir.html">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                         
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+         
         </div>
       </div>
-      <div class="btn-box">
-        <a href="">
+      <div class="boton-caja">
+        <a href="menu.html">
           Ver más
         </a>
       </div>
@@ -513,17 +310,17 @@
 
   <!-- Sobre Nosotros -->
 
-  <section class="about_section layout_padding">
-    <div class="container  ">
+  <section class="seccion_sobre layout_padding">
+    <div class="container">
 
       <div class="row">
         <div class="col-md-6 ">
-          <div class="img-box">
+          <div class="caja-img">
             <img src="images/about-img.png" alt="">
           </div>
         </div>
         <div class="col-md-6">
-          <div class="detail-box">
+          <div class="detalle-caja">
             <div class="heading_container">
               <h2>
                 Sobre Nosotros
@@ -550,7 +347,7 @@
   <!-- Fin Sobre Nosotros -->
 
   <!-- Sección Ordenar -->
-  <section class="book_section layout_padding">
+  <section class="reserva_seccion layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -559,7 +356,7 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="form_container">
+          <div class="formulario_contenedor">
             <form action="">
               <div>
                 <input type="text" class="form-control" placeholder="Tú Nombre" />
@@ -592,7 +389,7 @@
               <div>
                 <input type="text" class="form-control" placeholder="Dirección" />
               </div>
-              <div class="btn_box">
+              <div class="boton_caja">
                 <button>
                   Pide Altok
                 </button>
@@ -608,7 +405,7 @@
 
   <!-- Sección Desarrolladores -->
 
-  <section class="client_section layout_padding-bottom">
+  <section class="cliente_seccion layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
         <h2>
@@ -619,7 +416,7 @@
         <div class="owl-carousel client_owl-carousel">
           <div class="item">
             <div class="box">
-              <div class="detail-box">
+              <div class="detalle-caja">
                 <p>
                   Soy Jesús Sandoval desarrollador de la página
                 </p>
@@ -630,14 +427,14 @@
                   Desarrollador
                 </p>
               </div>
-              <div class="img-box">
+              <div class="caja-img">
                 <img src="images/ShrekFace.jpg" alt="" class="box-img">
               </div>
             </div>
           </div>
           <div class="item">
             <div class="box">
-              <div class="detail-box">
+              <div class="detalle-caja">
                 <p>
                   Soy Fabián Osses desarrollador de la página
                 </p>
@@ -648,7 +445,7 @@
                   Desarrollador
                 </p>
               </div>
-              <div class="img-box">
+              <div class="caja-img">
                 <img src="images/TaBienGoku.jpg" alt="" class="box-img">
               </div>
             </div>
@@ -661,11 +458,11 @@
   <!-- Fin Sección Desarrolladores -->
 
   <!-- footer sección -->
-  <footer class="footer_section">
+  <footer class="seccion_pie">
     <div class="container">
       <div class="row">
         <div class="col-md-4 footer-col">
-          <div class="footer_contact">
+          <div class="contacto_pie">
             <h4>
               Contacto
             </h4>
@@ -692,9 +489,9 @@
           </div>
         </div>
         <div class="col-md-4 footer-col">
-          <div class="footer_detail">
+          <div class="detalle_pie">
              
-            <div class="footer_social">
+            <div class="redes_pie">
               <a href="">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
@@ -725,7 +522,7 @@
           </p>
         </div>
       </div>
-      <div class="footer-info">
+      <div class="informacion_pie">
         <p>
           &copy; <span id="displayYear"></span> Todos los derechos reservados
           <a href="https://html.design/">DuocUc FullStack2</a><br><br>

@@ -3,11 +3,11 @@
 @media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
-  .hero_area {
+  .area_principal {
     min-height: auto;
   }
 
-  .custom_nav-container .navbar-nav {
+  .contenedor_navegacion-persolizado .navbar-nav {
     padding-top: 15px;
 padding-left: 0;
     align-items: center;
@@ -17,22 +17,22 @@ padding-left: 0;
     justify-content: center;
     margin-top: 15px;
   }
-  .custom_nav-container .navbar-nav .nav-item .nav-link {
+  .contenedor_navegacion-persolizado .navbar-nav .nav-item .nav-link {
     padding: 5px 25px;
     margin: 5px 0;
   }
 
-  .slider_section .carousel-indicators {
+  .seccion_deslizante .carousel-indicators {
     margin-top: 45px;
   }
 
-  .offer_section .box {
+  .seccion_oferta .box {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .offer_section .box .img-box {
+  .seccion_oferta .box .caja-img {
     margin-right: 0;
     margin-bottom: 15px;
   }
@@ -40,21 +40,21 @@ padding-left: 0;
 
 @media (max-width: 767px) {
 
-  .about_section .detail-box,
-  .book_section .form_container {
+  .seccion_sobre .detalle-caja,
+  .reserva_seccion .formulario_contenedor {
     margin-bottom: 45px;
   }
 
-  .about_section .row {
+  .seccion_sobre .row {
     flex-direction: column-reverse;
   }
 
-  .offer_section .box {
+  .seccion_oferta .box {
     flex-direction: row;
     text-align: left;
   }
 
-  .offer_section .box .img-box {
+  .seccion_oferta .box .caja-img {
     margin-right: 15px;
     margin-bottom: 0;
   }
@@ -63,19 +63,19 @@ padding-left: 0;
  
 
 @media (max-width: 430px) {
-  .offer_section .box {
+  .seccion_oferta .box {
     flex-direction: column;
     text-align: center;
   }
 
-  .offer_section .box .img-box {
+  .seccion_oferta .box .caja-img {
     margin-right: 0;
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 376px) {
-  .slider_section .detail-box h1 {
+  .seccion_deslizante .detalle-caja h1 {
     font-size: 3rem;
   }
   
