@@ -204,6 +204,29 @@
     </section>
     <!-- Fin Panel de Ventas -->
   </div>
+  <!-- Panel de Gráfico de Compras vs Visitas -->
+    <section class="food_section layout_padding-bottom">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2 class="h2adm">Estadísticas del último mes</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-4">Visitas y Compras</h5>
+                <canvas id="comprasVisitasChart" height="120"></canvas>
+                <div class="mt-4">
+                  <p><strong>Visitas a la página (último mes):</strong> <span id="visitasMes"></span></p>
+                  <p><strong>Compras (último mes):</strong> <span id="comprasMes"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Panel de Gráfico de Compras vs Visitas -->
 
  <!-- footer sección -->
  <footer class="seccion_pie">
@@ -300,7 +323,12 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
-  <!-- End Google Map -->
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+   <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/estadisticas.js"></script>
+  
 </body>
 
 </html>
