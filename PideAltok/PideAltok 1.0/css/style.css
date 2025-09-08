@@ -840,7 +840,7 @@ ul{
 }
 
 .cliente_seccion .box .detalle-caja {
-  background-color: #222831;
+  background-color: #4d7dc5;
   color: #ffffff;
   padding: 25px 25px 15px 25px;
   border-radius: 5px;
@@ -904,7 +904,7 @@ ul{
 }
 
 .contact_seccion .formulario_contenedor input::-webkit-input-placeholder {
-  color: #222222;
+  color: #ff7676;
 }
 
 .contact_seccion .formulario_contenedor input:-ms-input-placeholder {
