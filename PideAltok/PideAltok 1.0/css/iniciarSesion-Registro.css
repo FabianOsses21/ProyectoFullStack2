@@ -48,8 +48,9 @@ a{
  
   
 input[type="usuario"],
-input[type="correo"],
-input[type="contraseña"]{
+input[type="email"],
+input[type="password"],
+input[type="text"]{
     width: 100%;
     padding:4px;
     margin-bottom:5px;

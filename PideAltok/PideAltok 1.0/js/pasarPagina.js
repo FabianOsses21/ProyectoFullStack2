@@ -1,35 +1,36 @@
 function mostrarInicioSesion() {
-  document.getElementById("registro").style.display = "none";
+  ocultarTodos();
   document.getElementById("inicio-sesion").style.display = "block";
 }
+
 function mostrarRegistro() {
+  ocultarTodos();
   document.getElementById("registro").style.display = "block";
-  document.getElementById("inicio-sesion").style.display = "none";
 }
+
 function verificar() {
+  ocultarTodos();
   document.getElementById("enviarCodigo").style.display = "block";
-  document.getElementById("registro").style.display = "none";
-  document.getElementById("inicio-sesion").style.display = "none";
 }
+
 function continuar() {
+  ocultarTodos();
   document.getElementById("verificacion").style.display = "block";
-  document.getElementById("enviarCodigo").style.display = "none";
-
 }
+
 function nuevaContraseña() {
+  ocultarTodos();
   document.getElementById("nuevaContraseña").style.display = "block";
-  document.getElementById("verificacion").style.display = "none";
+}
 
-}
 function aceptar() {
+  ocultarTodos();
   document.getElementById("inicio-sesion").style.display = "block";
-  document.getElementById("nuevaContraseña").style.display = "none";
-  document.getElementById("registro").style.display = "none";
 }
-function iniciarSesion(){
-  document.getElementById("principal").style.display = "block";
-  document.getElementById("inicio-sesion").style.display = "none";
-  
+ 
+function ocultarTodos() {
+  const formularios = document.querySelectorAll('.formulario');
+  formularios.forEach(form => form.style.display = 'none');
 }
 
 
