@@ -10,8 +10,8 @@ getYear();
 
 // isotope js
 $(window).on('load', function () {
-    $('.filters_menu li').click(function () {
-        $('.filters_menu li').removeClass('active');
+    $('.filtro_menu li').click(function () {
+        $('.filtro_menu li').removeClass('active');
         $(this).addClass('active');
 
         var data = $(this).attr('data-filter');

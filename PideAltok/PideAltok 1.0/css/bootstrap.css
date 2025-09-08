@@ -2597,12 +2597,13 @@ fieldset:disabled a.btn {
 
 .btn-danger:hover {
   color: #fff;
-  background-color: #c82333;
+  background-color: #c40e21;
   border-color: #bd2130;
+  
 }
 
 .btn-danger:focus, .btn-danger.focus {
-  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+  box-shadow: 0 0 0 5px rgba(94, 68, 70, 0.5);
 }
 
 .btn-danger.disabled, .btn-danger:disabled {
@@ -4063,6 +4064,7 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4076,7 +4078,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #e6dede;
 }
 
 .nav-tabs .nav-item {
@@ -4094,7 +4096,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #7d6c6c;
   background-color: transparent;
   border-color: transparent;
 }
@@ -4196,6 +4198,7 @@ input[type="button"].btn-block {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  
 }
 
 .navbar-nav .dropdown-menu {
@@ -4225,10 +4228,19 @@ input[type="button"].btn-block {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+ 
 }
+ 
+
+ 
+
+ 
+
+ 
+
 
 .navbar-toggler:hover, .navbar-toggler:focus {
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .navbar-toggler-icon {
@@ -4581,7 +4593,7 @@ input[type="button"].btn-block {
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 1.25rem; 
 }
 
 .card-title {
@@ -4608,8 +4620,9 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #212121;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  color: white;
 }
 
 .card-header:first-child {
@@ -5829,6 +5842,9 @@ a.close.disabled {
   outline: 0;
 }
 
+
+
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -6588,7 +6604,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-color: #212121 !important;
 }
 
 .bg-transparent {
