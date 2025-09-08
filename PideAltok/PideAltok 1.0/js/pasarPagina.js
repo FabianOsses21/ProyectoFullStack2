@@ -1,36 +1,25 @@
+function mostrarFormulario(id) {
+  const formularios = document.querySelectorAll(".formulario");
+  formularios.forEach(f => f.style.display = "none");
+  document.getElementById(id).style.display = "block";
+}
+
 function mostrarInicioSesion() {
-  ocultarTodos();
-  document.getElementById("inicio-sesion").style.display = "block";
+  mostrarFormulario("inicio-sesion");
 }
 
 function mostrarRegistro() {
-  ocultarTodos();
-  document.getElementById("registro").style.display = "block";
+  mostrarFormulario("registro");
 }
 
 function verificar() {
-  ocultarTodos();
-  document.getElementById("enviarCodigo").style.display = "block";
+  mostrarFormulario("enviarCodigo");
 }
 
-function continuar() {
-  ocultarTodos();
-  document.getElementById("verificacion").style.display = "block";
+function mostrarVerificacion() {
+  mostrarFormulario("verificacion");
 }
 
-function nuevaContraseña() {
-  ocultarTodos();
-  document.getElementById("nuevaContraseña").style.display = "block";
+function mostrarNuevaContrasena() {
+  mostrarFormulario("nuevaContraseña");
 }
-
-function aceptar() {
-  ocultarTodos();
-  document.getElementById("inicio-sesion").style.display = "block";
-}
- 
-function ocultarTodos() {
-  const formularios = document.querySelectorAll('.formulario');
-  formularios.forEach(form => form.style.display = 'none');
-}
-
-
