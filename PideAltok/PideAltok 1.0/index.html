@@ -51,7 +51,7 @@
 
 
 
-    <!--Nagador-->
+    <!--Navegador-->
     <header class="seccion_encabezado">
       <div class="container">
         <nav class="navbar navbar-expand-lg contenedor_navegacion-persolizado">
@@ -232,72 +232,77 @@
 
 
 <!--menu-->
-  <section class="seccion_comida relleno_diseño_inferior">
+<section class="seccion_comida relleno_diseño_inferior">
+    <div class="container">
+      <div class="contenido_titulo encabezado_centro">
+        <h2>
+          Menú
+        </h2>
+      </div>
+
+ 
+      <ul class="filtro_menu">
+        <li class="active" data-filter="*">Todo</li>
+        <li data-filter=".Hamburguesas">Hamburguesas</li>
+        <li data-filter=".Pizzas">Pizzas</li>
+        <li data-filter=".pasta">Pastas</li>
+        <li data-filter=".fries">Papas fritas</li>
+      </ul>
+
+       <section class="seccion_comida relleno_diseño_inferior">
     <div class="container">
        
           <h2>Menú</h2>
  
-      <div class="contenido_filtro">
-        <div class="row grid">
-          <div class="col-sm-7 col-lg-4 all">
-            <div class="card" style="width: 18rem;margin-top: 8px;">
-                <img src="images/Pizza4Estaciones.jfif" class="img_carta" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pizza 4 estaciones</h5>
-                  <p class="card-text">Pizza clásica con jamón, champiñones, aceitunas y alcachofas en cuatro secciones.</p>
-                  <a href="carrito.html" class="btn btn-danger">Pedir</a>
-                </div>
-              </div>
-          </div>
-          
-      
-          <div class="col-sm-6.5 col-lg-4 all ">
-             <div class="card" style="width: 18rem; margin-top: 8px;">
-              <img src="images/Ñoquis.webp" class="img_carta" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Ñoquis</h5>
-                <p class="card-text">Pasta italiana hecha de papas y harina, servida con salsa a elección.</p>
-                <a href="carrito.html" class="btn btn-danger">Pedir</a>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-sm-6.5 col-lg-4 all" >
-           <div class="card" style="width: 18rem; margin-top: 8px;">
-            <img src="images/Pizza2Quesos.png" class="img_carta" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pizza 2 quesos</h5>
-                <p class="card-text">Pizza con mezcla de mozzarella y queso azul, ideal para los amantes del queso.</p>
-              <a href="carrito.html" class="btn btn-danger">Pedir</a>
-            </div>
-          </div>
-          </div>
-
-          <div class="col-sm-6.5 col-lg-4 all ">
-             <div class="card" style="width: 18rem; margin-top: 8px;">
-              <img src="images/Hamburguesa.png" class="img_carta" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Hamburguesa</h5>
-                <p class="card-text">Hamburguesa con queso cheddar, lechuga, tomate y salsas a elección.</p>
-                <a href="carrito.html" class="btn btn-danger">Pedir</a>
-              </div>
-            </div>
-
-          </div>
-
-
-        
-
-         
-        </div>
-      </div>
-      <div class="boton-caja">
-        <a href="menu.html">
-          Ver más
-        </a>
+      <div class="row grid">
+  <!-- Producto Pizzas -->
+  <div class="col-sm-7 col-lg-4 all Pizzas">
+    <div class="card" style="width: 18rem;margin-top: 8px;">
+      <img src="images/Pizza4Estaciones.jfif" class="img_carta" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pizza 4 estaciones</h5>
+        <p class="card-text">Pizza clásica con jamón, champiñones, aceitunas y alcachofas en cuatro secciones.</p>
+        <a href="carrito.html" class="btn btn-danger">Pedir</a>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Producto Pastas -->
+  <div class="col-sm-6 col-lg-4 all pasta">
+    <div class="card" style="width: 18rem; margin-top: 8px;">
+      <img src="images/Ñoquis.webp" class="img_carta" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ñoquis</h5>
+        <p class="card-text">Pasta italiana hecha de papas y harina, servida con salsa a elección.</p>
+        <a href="carrito.html" class="btn btn-danger">Pedir</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto Pizzas -->
+  <div class="col-sm-6 col-lg-4 all Pizzas">
+    <div class="card" style="width: 18rem; margin-top: 8px;">
+      <img src="images/Pizza2Quesos.png" class="img_carta" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pizza 2 quesos</h5>
+        <p class="card-text">Pizza con mezcla de mozzarella y queso azul, ideal para los amantes del queso.</p>
+        <a href="carrito.html" class="btn btn-danger">Pedir</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto Hamburguesas -->
+  <div class="col-sm-6 col-lg-4 all Hamburguesas">
+    <div class="card" style="width: 18rem; margin-top: 8px;">
+      <img src="images/Hamburguesa.png" class="img_carta" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hamburguesa</h5>
+        <p class="card-text">Hamburguesa con queso cheddar, lechuga, tomate y salsas a elección.</p>
+        <a href="carrito.html" class="btn btn-danger">Pedir</a>
+      </div>
+    </div>
+  </div>
+</div>
 <!--termino menu-->
  
  
