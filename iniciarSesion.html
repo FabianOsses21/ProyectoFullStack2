@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>PideAltokCL</title>
+    <link rel="stylesheet" href="css/iniciarSesion-Registro.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+  </head>
+  <body>
+
+
+ 
+     
+ 
+      
+   
+    <div class="caja-fondo" style="z-index: -1; height: 100%;">
+  
+          <img src="images/hero-bg.jpg" alt="">
+    </div>
+
+
+
+    
+
+      
+
+      
+    <!--inicio sesion-->
+    <div class="contenedor">
+    <div class="formulario">
+      <div class="formulario" id="inicio-sesion">
+        <h2 class="titulo">Inicio de sesion</h2>
+        <form action="iniciarSesion-Registro.html" method="post">
+          <label for="correo">Correo</label>
+          <input type="correo" id="correo" name="correo" required />
+          <label for="contraseña">Contraseña</label>
+          <input type="contraseña" id="contraseña" name="contraseña" required />
+          <button type="enviar" class="enviar" onclick="iniciarSesion()"> <a href="index.html" class="iniciarSesiontxt" >Iniciar Sesion</a> </button>
+        </form>
+        <button onclick="" class="iniGoogle">Iniciar Sesion con Google</button>
+        <button onclick="mostrarRegistro()" class="enviar2">Registrarse</button>
+        <a href="#" class="olvidaste" onclick="verificar()">¿Olvidaste tu contraseña?</a>
+      </div>
+      </div>
+ 
+
+      <!--registro-->
+ 
+      <div class="formulario" id="registro" style="display: none">
+        <h2 class="titulo">Registrarse</h2>
+        <form action="iniciarSesion-Registro.html" method="post">
+          <label for="usuario">Usuario</label>
+          <input type="usuario" id="usuario" name="usuario" required />
+          <label for="correo">Correo</label>
+          <input type="correo" id="correo" name="correo" required />
+          <label for="contraseña">Contraseña</label>
+          <input type="contraseña" id="contraseña" name="contraseña" required />
+          <label for="contraseñaRepetir">Repetir Contraseña</label>
+          <input
+            type="contraseña"
+            id="contraseña-repetir"
+            name="contraseña"
+            required
+          />
+        </form>
+        <button onclick="aceptar()" class="enviar" >Registrarse</button>
+        <button onclick="" class="iniGoogle">Iniciar Sesion con Google</button>
+        <a href="#" class="olvidaste" onclick="verificar()"
+          >¿Olvidaste tu contraseña?</a
+        >
+      
+      </div>
+ 
+
+      <!--enviarCodigo -->
+ 
+      <div class="formulario" id="enviarCodigo" style="display: none">
+        <h2 class="titulo">Recuperar Contraseña</h2>
+        <p>Introduce el codigo de recuperacion</p>
+        <form action="enviarCodigo.html" method="post">
+          <label for="contraseñaRepetir">Correo</label>
+          <input
+            type="contraseña"
+            id="contraseña-repetir"
+            name="contraseña"
+            required
+          />
+        </form>
+        <button onclick="continuar()" class="enviar">Enviar</button>
+      </div>
+      
+
+      <!--verificacion -->
+       
+      <div class="formulario" id="verificacion" style="display: none">
+        <h2 class="titulo">Verificacion</h2>
+        <p>Introduce el codigo</p>
+        <form action="verificacion.html" method="post">
+          <label for="contraseñaRepetir">Codigo</label>
+          <input
+            type="contraseña"
+            id="contraseña-repetir"
+            name="contraseña"
+            required
+          />
+        </form>
+        <button onclick="nuevaContraseña()" class="enviar">continuar</button>
+      </div>
+      
+
+      <!--nuevaContraseña -->
+     
+      <div class="formulario" id="nuevaContraseña" style="display: none">
+        <h2 class="titulo">Nueva contraseña</h2>
+
+        <form action="nuevaContraseña.html" method="post">
+          <label for="contraseñaRepetir">Nueva contraseña</label>
+          <input
+            type="contraseña"
+            id="contraseña-repetir"
+            name="contraseña"
+            required
+          />
+          <label for="contraseñaRepetir">Repite la nueva contraseña</label>
+          <input
+            type="contraseña"
+            id="contraseña-repetir"
+            name="contraseña"
+            required/>
+        </form>
+        <button onclick="aceptar()" class="enviar">Aceptar</button>
+      </div>
+     
+ 
+ 
+ <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+    <script src="js/pasarPagina.js"></script>
+  </body>
+</html>
