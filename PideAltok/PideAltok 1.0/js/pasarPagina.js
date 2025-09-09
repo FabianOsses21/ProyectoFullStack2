@@ -1,25 +1,45 @@
-function mostrarFormulario(id) {
-  const formularios = document.querySelectorAll(".formulario");
-  formularios.forEach(f => f.style.display = "none");
-  document.getElementById(id).style.display = "block";
-}
-
 function mostrarInicioSesion() {
-  mostrarFormulario("inicio-sesion");
+  document.getElementById("inicio-sesion").style.display = "block";
+  document.getElementById("registro").style.display = "none";
+  return false;
 }
-
 function mostrarRegistro() {
-  mostrarFormulario("registro");
+  document.getElementById("registro").style.display = "block";
+  document.getElementById("inicio-sesion").style.display = "none";
 }
-
 function verificar() {
-  mostrarFormulario("enviarCodigo");
+  document.getElementById("enviarCodigo").style.display = "block";
+  document.getElementById("registro").style.display = "none";
+  document.getElementById("inicio-sesion").style.display = "none";
+  return false;
+}
+function continuar() {
+  document.getElementById("enviarCodigo").style.display = "none";
+  document.getElementById("verificacion").style.display = "block";
+  return false;
 }
 
-function mostrarVerificacion() {
-  mostrarFormulario("verificacion");
+function nuevaContraseña() {
+  document.getElementById("verificacion").style.display = "none";
+  document.getElementById("nuevaContraseña").style.display = "block";
+    return false;
+}
+function aceptar() {
+
+  document.getElementById("inicio-sesion").style.display = "block";
+  document.getElementById("nuevaContraseña").style.display = "none";
+
+
+}
+function iniciarSesion(){
+  document.getElementById("principal").style.display = "block";
+  document.getElementById("inicio-sesion").style.display = "none";
+
+  
+}
+function redirigirFormulario() {
+  window.location.href = "index.html";
+  return false;
 }
 
-function mostrarNuevaContrasena() {
-  mostrarFormulario("nuevaContraseña");
-}
+

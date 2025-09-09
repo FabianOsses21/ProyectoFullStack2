@@ -26,7 +26,7 @@
 <div class="contenedor">
   <div class="formulario" id="inicio-sesion">
     <h2 class="titulo">Inicio de sesión</h2>
-    <form action="iniciarSesion-Registro.html" method="post">
+    <form action="index.html.html" method="post" onsubmit="return redirigirFormulario()">
       <label for="email">Correo</label>
       <input type="email" id="email" name="email" required
              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -40,15 +40,16 @@
       <button type="submit" class="enviar">Iniciar Sesión</button>
     </form>
 
-    <button class="iniGoogle">Iniciar Sesión con Google</button>
+    <button class="iniGoogle"><a href="https://workspace.google.com/intl/es-419/gmail/">Iniciar sesion con Google</a></button>
     <button onclick="mostrarRegistro()" class="enviar2">Registrarse</button>
     <a href="#" class="olvidaste" onclick="verificar()">¿Olvidaste tu contraseña?</a>
   </div>
 
   <!-- Registro -->
-  <div class="formulario" id="registro" style="display: none">
-    <h2 class="titulo">Registrarse</h2>
-    <form action="iniciarSesion-Registro.html" method="post">
+  <div class="formulario" id="registro" style="display: none; margin-top: 180px;">
+
+  <h2 class="titulo">Registrarse</h2>
+    <form onsubmit="mostrarInicioSesion()" method="post">
       <label for="usuario">Usuario</label>
       <input type="text" id="usuario" name="usuario" required />
 
@@ -75,10 +76,10 @@
              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
              title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula, un número y un símbolo." />
 
-      <button type="submit" class="enviar">Registrarse</button>
+      <button type="submit"  class="enviar">Registrarse</button>
     </form>
 
-    <button class="iniGoogle">Iniciar Sesión con Google</button>
+    <button class="iniGoogle"><a href="https://workspace.google.com/intl/es-419/gmail/">Iniciar sesion con Google</a></button>
     <a href="#" class="olvidaste" onclick="verificar()">¿Olvidaste tu contraseña?</a>
   </div>
 
@@ -86,20 +87,21 @@
   <div class="formulario" id="enviarCodigo" style="display: none">
     <h2 class="titulo">Recuperar Contraseña</h2>
     <p>Introduce el código de recuperación</p>
-    <form action="enviarCodigo.html" method="post">
+    <form  onsubmit="return continuar()" method="post">
       <label for="emailRecuperacion">Correo</label>
       <input type="email" id="emailRecuperacion" name="emailRecuperacion" required
              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
              title="Ingresa un correo válido. Ejemplo: usuario@dominio.com" />
-      <button type="submit" class="enviar">Enviar</button>
+      <button type="submit" class="enviar2">Continuar</button>
+
     </form>
   </div>
 
   <!-- Verificación -->
-  <div class="formulario" id="verificacion" style="display: none">
+  <div class="formulario" id="verificacion" style="display: none; ">
     <h2 class="titulo">Verificación</h2>
     <p>Introduce el código</p>
-    <form action="verificacion.html" method="post">
+    <form onsubmit="return nuevaContraseña()" method="post">
       <label for="codigoVerificacion">Código</label>
       <input type="text" id="codigoVerificacion" name="codigoVerificacion" required />
       <button type="submit" class="enviar">Continuar</button>
@@ -109,7 +111,7 @@
   <!-- Nueva Contraseña -->
   <div class="formulario" id="nuevaContraseña" style="display: none">
     <h2 class="titulo">Nueva contraseña</h2>
-    <form action="nuevaContraseña.html" method="post">
+    <form onsubmit="aceptar()" method="post">
       <label for="nueva">Nueva contraseña</label>
       <input type="password" id="nueva" name="nueva" required
              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
@@ -119,14 +121,14 @@
       <input type="password" id="nuevaRepetir" name="nuevaRepetir" required
              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
              title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula, un número y un símbolo." />
-      <button type="submit" class="enviar">Aceptar</button>
+      <button type="submit" class="enviar2">Aceptar</button>
     </form>
   </div>
 </div>
 
-     
- 
- 
+
+
+
  <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
